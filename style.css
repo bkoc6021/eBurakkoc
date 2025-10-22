@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f8fa;
+  color: #000;
+}
+
+/* Üst Menü Barı */
+.ust-bar {
+  background-color: #004b87;
+  color: white;
+  padding: 5px 0;
+}
+.ust-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+}
+.ust-bar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ust-bar nav ul li {
+  margin-right: 15px;
+}
+.ust-bar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+.ust-bar nav ul li a:hover {
+  text-decoration: underline;
+}
+.arama input {
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: none;
+}
+.arama button {
+  background: #007acc;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Başlık Alanı */
+.baslik {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  border-bottom: 3px solid #004b87;
+}
+.baslik .logo {
+  height: 80px;
+}
+.baslik .yazi {
+  text-align: center;
+  flex: 1;
+}
+.baslik h1 {
+  margin: 0;
+  color: #004b87;
+}
+.baslik h2 {
+  margin: 0;
+  color: #333;
+}
+.baslik .ataturk img {
+  height: 90px;
+}
+
+/* İçerik Alanı */
+.icerik {
+  display: flex;
+  width: 95%;
+  margin: 20px auto;
+  gap: 20px;
+}
+.baglantilar {
+  width: 260px;
+  background-color: #007acc;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.baglantilar h3 {
+  text-align: center;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding-bottom: 6px;
+}
+.baglantilar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.baglantilar li {
+  margin: 10px 0;
+}
+.baglantilar a {
+  color: #fff;
+  text-decoration: none;
+}
+.baglantilar a:hover {
+  text-decoration: underline;
+}
+
+/* Orta kısım - Slider/Duyuru */
+.slider {
+  flex: 1;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.slider img {
+  width: 100%;
+  border-radius: 6px;
+  height: auto;
+}
+.duyuru {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #004b87;
+}
+
+/* Alt bilgi */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #004b87;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Mobil uyum */
+@media (max-width: 800px) {
+  .icerik {
+    flex-direction: column;
+  }
+  .baglantilar {
+    width: 100%;
+  }
+}
