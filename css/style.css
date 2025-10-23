@@ -1,1 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Üst Menü */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0055a5;
+    padding: 10px 20px;
+}
+header .logo img {
+    height: 60px;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-list li {
+    margin-left: 20px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.slide.active {
+    display: block;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Haberler ve Öğretmenler */
+.container {
+    width: 90%;
+    margin: auto;
+}
+.haber-kart, .ogretmen-kart {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.haber-kart img, .ogretmen-kart img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #0055a5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
