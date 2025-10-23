@@ -1,1 +1,39 @@
+/* Temel Stil */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  background-color: #005eb8;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.haberler {
+  display: flex;
+  justify-content: space-around;
+}
+
+.haber {
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
 
