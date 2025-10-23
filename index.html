@@ -1,211 +1,110 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>KAYSERİ / KOCASİNAN - Atatürk Anadolu Lisesi</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="T.C. MİLLÎ EĞİTİM BAKANLIĞI KAYSERİ / KOCASİNAN / Atatürk Anadolu Lisesi">
-	<meta name="author" content="Atatürk Anadolu Lisesi - Örnek">
-	<link rel="shortcut icon" href="tema/tema/3/img/meb_logo.png" type="image/png">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KAYSERİ / KOCASİNAN - Atatürk Anadolu Lisesi</title>
 
-	<!-- local css (tema yapısı içinde olduğundan göreceli yollar) -->
-	<link href="tema/tema/3/css/bootstrap.css" rel="stylesheet">
-	<link href="tema/tema/3/css/font-awesome.min.css" rel="stylesheet">
-	<link href="tema/tema/3/css/mycss.css" rel="stylesheet">
-	<link href="tema/tema/3/css/thickbox.css" rel="stylesheet" media="screen">
+<!-- CSS dosyaları -->
+<link rel="stylesheet" href="tema/tema/3/css/bootstrap.css">
+<link rel="stylesheet" href="tema/tema/3/css/font-awesome.min.css">
+<link rel="stylesheet" href="tema/tema/3/css/mycss.css">
+<link rel="stylesheet" href="tema/tema/3/css/thickbox.css" media="screen">
 
-	<!-- Basit inline CSS: MEB görünümünü yakalamak için -->
-	<style>
-		:root {
-			--meb-red: #a61c1c; /* MEB kırmızısına yakın ton */
-			--meb-dark: #7f1414;
-			--container-bg: #fff;
-			--muted: #6c6c6c;
-			font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-		}
-		body { background:#f2f2f2; color:#333; }
-		/* Üst bant */
-		.top-bar {
-			background: var(--meb-red);
-			color: #fff;
-			padding: 10px 0;
-			border-bottom: 3px solid rgba(0,0,0,0.05);
-		}
-		.top-bar .inner {
-			display:flex;
-			align-items:center;
-			justify-content:space-between;
-		}
-		.top-left { display:flex; align-items:center; gap:12px; }
-		.top-left img { display:block; height:64px; width:auto; }
-		.site-title {
-			text-align:center;
-			flex:1;
-			color:#fff;
-		}
-		.site-title h1 {
-			margin:0; font-size:20px; font-weight:700; letter-spacing:.4px;
-		}
-		.site-title p { margin:0; font-size:12px; opacity:.95; }
-
-		/* Navbar */
-		.navbar-default {
-			margin-bottom:0;
-			border-radius:0;
-			box-shadow: 0 1px 0 rgba(0,0,0,0.04);
-		}
-		.navbar-default .navbar-nav>li>a {
-			padding:14px 18px;
-			color:#333;
-			font-weight:600;
-		}
-		.navbar-default .navbar-nav>li.active>a,
-		.navbar-default .navbar-nav>li>a:hover {
-			background: transparent;
-			color: var(--meb-red);
-			text-decoration:none;
-		}
-
-		/* Slider area */
-		.slider { background:#fff; padding:10px 0; border-bottom:1px solid #e6e6e6; }
-		.slider img { width:100%; height:auto; display:block; }
-
-		/* Content layout */
-		.container.main {
-			background: var(--container-bg);
-			padding:20px;
-			margin-top:20px;
-			box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-		}
-		.box-title { background: #f7f7f7; padding:8px 12px; border-left:4px solid var(--meb-red); margin-bottom:12px; }
-
-		/* Footer */
-		.site-footer {
-			background: var(--meb-red);
-			color: #fff;
-			padding:18px 0;
-			margin-top:24px;
-			text-align:center;
-		}
-		.site-footer a { color: #fff; text-decoration:underline; }
-
-		/* Responsive tweaks to match MEB look */
-		@media (max-width:767px) {
-			.top-bar .inner { flex-direction:column; align-items:center; gap:8px; }
-			.top-left { justify-content:center; }
-			.site-title h1 { font-size:18px; }
-		}
-	</style>
+<style>
+/* Birebir görünüm için bazı temel inline düzeltmeler */
+body { font-family:"Segoe UI", Tahoma, Arial, sans-serif; background:#f2f2f2; }
+.navbar-nav>li>a { padding:14px 18px; white-space:nowrap; text-overflow:ellipsis; max-width:118px; overflow:hidden; }
+.navbar-default { margin-bottom:0; border-radius:0; }
+.site-footer { background:#0072bc; color:#fff; text-align:center; padding:18px 0; margin-top:24px; }
+.slider img { width:100%; height:auto; }
+</style>
 </head>
 <body>
 
-	<!-- Üst bant -->
-	<div class="top-bar">
-		<div class="container inner">
-			<div class="top-left">
-				<img src="tema/tema/3/img/meb_logo.png" alt="MEB Logosu">
-			</div>
+<!-- Üst bar -->
+<div class="top-bar" style="background:#0072bc; color:#fff; padding:10px 0;">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+    <img src="tema/tema/3/img/meb_logo.png" alt="MEB Logo" height="64">
+    <div style="text-align:center;">
+      <h1>KAYSERİ / KOCASİNAN - Atatürk Anadolu Lisesi</h1>
+      <p>T.C. MİLLÎ EĞİTİM BAKANLIĞI</p>
+    </div>
+    <div></div>
+  </div>
+</div>
 
-			<div class="site-title">
-				<h1>KAYSERİ / KOCASİNAN - Atatürk Anadolu Lisesi</h1>
-				<p>T.C. MİLLÎ EĞİTİM BAKANLIĞI</p>
-			</div>
+<!-- Menü -->
+<nav class="navbar navbar-default">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="mainMenu">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Ana Sayfa</a></li>
+      <li><a href="#">Okulumuz</a></li>
+      <li><a href="#">Duyurular</a></li>
+      <li><a href="#">Eğitim</a></li>
+      <li><a href="#">Galeri</a></li>
+      <li><a href="#">İletişim</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
 
-			<!-- Sağ üstte küçük bilgi / tarih veya boş alan -->
-			<div style="min-width:160px; text-align:right; color:rgba(255,255,255,0.9); font-size:13px;">
-				<span>Okul Web Sitesi (Örnek)</span>
-			</div>
-		</div>
-	</div>
+<!-- Slider -->
+<div class="slider">
+  <img src="tema/tema/3/img/slider1.jpg" alt="Slider">
+</div>
 
-	<!-- Menü -->
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand hidden-xs" href="#">AAL</a>
-			</div>
+<!-- Ana içerik -->
+<div class="container" style="margin-top:20px;">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Duyurular</h2>
+      <ul>
+        <li>15 Eylül: Yeni eğitim-öğretim yılı başlıyor.</li>
+        <li>12 Haziran: Mezuniyet töreni programı yayımlandı.</li>
+        <li>Kütüphane: Okul kütüphanesi yenilendi.</li>
+      </ul>
 
-			<div class="collapse navbar-collapse" id="mainMenu">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Ana Sayfa</a></li>
-					<li><a href="#">Okulumuz</a></li>
-					<li><a href="#">Duyurular</a></li>
-					<li><a href="#">Eğitim</a></li>
-					<li><a href="#">Galeri</a></li>
-					<li><a href="#">İletişim</a></li>
-				</ul>
+      <h2>Haberler</h2>
+      <p>Buraya güncel haber kartları gelecek.</p>
+    </div>
+    <div class="col-md-4">
+      <h2>Hızlı Erişim</h2>
+      <ul>
+        <li><a href="#">E-Okul</a></li>
+        <li><a href="#">MEB</a></li>
+        <li><a href="#">Yönetim</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
 
-				<form class="navbar-form navbar-right" role="search" style="margin-right:0;">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Ara...">
-					</div>
-					<button type="submit" class="btn btn-default">Ara</button>
-				</form>
-			</div>
-		</div>
-	</nav>
+      <h2>İletişim</h2>
+      <address>
+        <strong>Atatürk Anadolu Lisesi</strong><br>
+        Kocasinan / Kayseri<br>
+        Tel: (000) 000 00 00
+      </address>
+    </div>
+  </div>
+</div>
 
-	<!-- Slider -->
-	<div class="slider">
-		<div class="container">
-			<!-- Orijinalde slider var; burada örnek resim -->
-			<img src="tema/tema/3/img/slider1.jpg" alt="Slider" onerror="this.src='tema/tema/3/img/meblogo.png'">
-		</div>
-	</div>
+<!-- Footer -->
+<footer class="site-footer">
+  <p>© 2025 T.C. MİLLÎ EĞİTİM BAKANLIĞI - KAYSERİ / KOCASİNAN / Atatürk Anadolu Lisesi</p>
+</footer>
 
-	<!-- Ana içerik -->
-	<div class="container main">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="box-title"><strong>Duyurular</strong></div>
-				<ul>
-					<li><strong>15 Eylül:</strong> Yeni eğitim-öğretim yılı başlıyor.</li>
-					<li><strong>12 Haziran:</strong> Mezuniyet töreni programı yayımlandı.</li>
-					<li><strong>Kütüphane:</strong> Okul kütüphanesi yenilendi.</li>
-				</ul>
-				<hr>
-				<h4>Haberler</h4>
-				<p>Buraya güncel haber kartları, haber özetleri gelebilir — orijinal sitedeki gibi kutular kullanabilirsin.</p>
-			</div>
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="tema/tema/3/js/bootstrap.min.js"></script>
+<script src="tema/tema/3/js/xmlMenuLoader.js"></script>
 
-			<div class="col-md-4">
-				<div class="box-title"><strong>Hızlı Erişim</strong></div>
-				<ul class="list-unstyled">
-					<li><a href="#">E-Okul</a></li>
-					<li><a href="#">MEB</a></li>
-					<li><a href="#">Yönetim</a></li>
-					<li><a href="#">İletişim</a></li>
-				</ul>
-
-				<div style="margin-top:18px;" class="box-title"><strong>İletişim</strong></div>
-				<address>
-					<strong>Atatürk Anadolu Lisesi</strong><br>
-					Kocasinan / Kayseri<br>
-					Tel: (000) 000 00 00
-				</address>
-			</div>
-		</div>
-	</div>
-
-	<!-- Footer -->
-	<footer class="site-footer">
-		<div class="container">
-			<p>© 2025 T.C. MİLLÎ EĞİTİM BAKANLIĞI - KAYSERİ / KOCASİNAN / Atatürk Anadolu Lisesi</p>
-		</div>
-	</footer>
-
-	<!-- JS (önce jquery sonra bootstrap) -->
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script src="tema/tema/3/js/bootstrap.min.js"></script>
-
-	<!-- opsiyonel: xmlMenuLoader.js varsa çağır -->
-	<script src="tema/tema/3/js/xmlMenuLoader.js"></script>
 </body>
 </html>
