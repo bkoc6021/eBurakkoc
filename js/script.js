@@ -1,22 +1,15 @@
-// Slider otomatik geçiş
-let slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+let index = 0;
+const slides = document.querySelectorAll('.slider img');
 
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[index].classList.add('active');
+function showSlide(i) {
+  slides.forEach(s => s.style.display = 'none');
+  slides[i].style.display = 'block';
 }
 
-setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-}, 4000);
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
 
-// Mobil menü toggle
-const mobileMenu = document.getElementById('mobile-menu');
-const navList = document.querySelector('.nav-list');
-
-mobileMenu.addEventListener('click', () => {
-    navList.classList.toggle('active');
-});
-
+setInterval(nextSlide, 3000);
+showSlide(index);
