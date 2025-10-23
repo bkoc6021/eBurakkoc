@@ -1,80 +1,62 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KAYSERİ / KOCASİNAN - Atatürk Anadolu Lisesi</title>
-    <link rel="shortcut icon" href="img/meblogo.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Atatürk Anadolu Lisesi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Üst Menü -->
-    <header>
-        <div class="logo">
-            <a href="#"><img src="img/meblogo.png" alt="MEB Logo"></a>
-        </div>
-        <nav class="menu">
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#">Ana Sayfa</a></li>
-                <li><a href="#">Haberler</a></li>
-                <li><a href="#">Öğretmenler</a></li>
-                <li><a href="#">İletişim</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Slider -->
-    <section class="slider">
-        <div class="slide active"><img src="img/slider1.jpg" alt="Slider 1"></div>
-        <div class="slide"><img src="img/slider2.jpg" alt="Slider 2"></div>
-    </section>
+<header>
+  <!-- Üç çizgi ve menü -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#">Ana Sayfa</a></li>
+      <li><a href="#">Haberler</a></li>
+      <li><a href="#">Öğretmenler</a></li>
+      <li><a href="#">İletişim</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Haberler -->
-    <section class="haberler container">
-        <h2>Haberler</h2>
-        <div class="haber-kart">
-            <img src="img/haber1.jpg" alt="Haber 1">
-            <h3>Haber Başlığı 1</h3>
-            <p>Kısa açıklama buraya gelecek.</p>
-        </div>
-        <div class="haber-kart">
-            <img src="img/haber2.jpg" alt="Haber 2">
-            <h3>Haber Başlığı 2</h3>
-            <p>Kısa açıklama buraya gelecek.</p>
-        </div>
-        <div class="haber-kart">
-            <img src="img/haber3.jpg" alt="Haber 3">
-            <h3>Haber Başlığı 3</h3>
-            <p>Kısa açıklama buraya gelecek.</p>
-        </div>
-    </section>
+<main>
+  <!-- Slider ve haberler -->
+  <div class="slider">
+    <img src="img/slider1.jpg" alt="">
+    <img src="img/slider2.jpg" alt="">
+  </div>
 
-    <!-- Öğretmenler -->
-    <section class="ogretmenler container">
-        <h2>Öğretmenlerimiz</h2>
-        <div class="ogretmen-kart">
-            <img src="img/ogretmen1.jpg" alt="Öğretmen 1">
-            <h4>Öğretmen Adı 1</h4>
-        </div>
-        <div class="ogretmen-kart">
-            <img src="img/ogretmen2.jpg" alt="Öğretmen 2">
-            <h4>Öğretmen Adı 2</h4>
-        </div>
-        <div class="ogretmen-kart">
-            <img src="img/ogretmen3.jpg" alt="Öğretmen 3">
-            <h4>Öğretmen Adı 3</h4>
-        </div>
-    </section>
+  <section class="haberler">
+    <div class="haber">
+      <img src="img/haber1.jpg" alt="">
+      <p>Haber Başlığı</p>
+    </div>
+    <div class="haber">
+      <img src="img/haber2.jpg" alt="">
+      <p>Haber Başlığı</p>
+    </div>
+  </section>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 T.C. MİLLÎ EĞİTİM BAKANLIĞI KAYSERİ / KOCASİNAN / Atatürk Anadolu Lisesi</p>
-    </footer>
+<footer>
+  <div class="footer-top">
+    <ul>
+      <li><a href="#">Ana Sayfa</a></li>
+      <li><a href="#">Haberler</a></li>
+      <li><a href="#">Öğretmenler</a></li>
+      <li><a href="#">İletişim</a></li>
+    </ul>
+    <div>
+      <p>Atatürk Anadolu Lisesi</p>
+      <p>Kocasinan / Kayseri</p>
+      <p>Telefon: 0 (352) XXX XX XX</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 T.C. Millî Eğitim Bakanlığı Atatürk Anadolu Lisesi
+  </div>
+</footer>
+
 </body>
 </html>
