@@ -1,39 +1,35 @@
-/* Temel Stil */
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
+  font-family: Tahoma, Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin:0;
+  padding:0;
 }
 
-.navbar {
-  background-color: #005eb8;
-}
-
-.navbar-nav .nav-link {
-  color: white;
+.navbar .nav-link {
+  color:white !important;
+  font-weight:bold;
 }
 
 .slider img {
-  width: 100%;
-  border-radius: 8px;
+  width:100%;
+  border-radius:5px;
 }
 
 .haberler {
-  display: flex;
-  justify-content: space-around;
+  display:flex;
+  justify-content:space-around;
+  margin:20px 0;
 }
 
-.haber {
-  background: white;
-  border-radius: 5px;
-  padding: 20px;
+.haber img {
+  width:200px;
+  height:120px;
+  border-radius:5px;
 }
 
 footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+  background-color:#0072c6;
+  color:white;
+  text-align:center;
+  padding:20px;
 }
-
